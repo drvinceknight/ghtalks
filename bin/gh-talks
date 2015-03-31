@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+"""
+A script that crawls a directory and builds an index.html file as required.
+"""
