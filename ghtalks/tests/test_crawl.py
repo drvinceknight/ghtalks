@@ -21,10 +21,10 @@ class TestCrawl(unittest.TestCase):
         crwl = ghtalks.Crawl()
         crwl.crawl_directories(os.path.join(root, 'ghtalks/tests'))
         test_directories = [os.path.join(root, d) for d in
-                                ['ghtalks/tests/2015-03-30-test-directory-1',
-                                 'ghtalks/tests/2015-03-30-test-directory-1',
-                                 'ghtalks/tests/test_subdirectories/2015-04-01-test_directory']]
-        self.assertEquals(crwl.directories, test_directories)
+                                ['ghtalks/tests/test_directory/2015-03-30-test-directory-1',
+                                 'ghtalks/tests/test_directory/2015-03-31-test-directory-2',
+                                 'ghtalks/tests/test_directory/test_subdirectory/2015-04-01-test_directory']]
+        self.assertEquals(sorted(crwl.directories), sorted(test_directories))
 
     def test_has_date(self):
         root = os.getcwd()

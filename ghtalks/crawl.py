@@ -14,10 +14,8 @@ class Crawl:
         self.directory = os.path.join(root, directory)
 
     def crawl_directories(self, directory):
-        #self.directories = [f for f in os.walk(directory)]
-        self.directories = [f for f in os.walk(directory) if os.path.isdir(f)]
-        print self.directories
-        #self.directories = [f for f in os.walk(directory) if (os.path.isdir(f) and self.has_date(f)]
+        self.directories = [f[0] for f in os.walk(directory) if
+                (os.path.isdir(f[0]) and self.has_date(f[0]))]
 
     def has_date(self, directory):
         # Below is a regex for a date in ISO global date format
