@@ -20,5 +20,6 @@ class Crawl:
         #self.directories = [f for f in os.walk(directory) if (os.path.isdir(f) and self.has_date(f)]
 
     def has_date(self, directory):
+        # Below is a regex for a date in ISO global date format
         regex = '(19|20)\d\d[- ./](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])'
         return bool(re.search(regex, directory))
