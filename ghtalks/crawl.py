@@ -25,7 +25,8 @@ class Crawl:
                             (os.path.isdir(f[0]) and self.has_date(f[0]))]
 
     def has_date(self, directory):
-        return bool(re.search(self.date_regex, directory))
+        return bool(re.search(self.date_regex,
+            os.path.basename(os.path.normpath(directory))[:len('yyyy-mm-dd')]))
 
     def generate_talks(self, filetypes=['.pdf', '.html'],
                        talk_filename='index'):
