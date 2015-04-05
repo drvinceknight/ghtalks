@@ -10,4 +10,7 @@ setup(
     url='',
     license='The MIT License (MIT)',
     description='Generate a static side with talks',
+    install_requires=[
+        "pyyaml >= 3.11",
+    ],
 )
