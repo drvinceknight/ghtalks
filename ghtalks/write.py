@@ -8,4 +8,4 @@ class Index:
     Class that is passed a list of talks and writes the required html
     """
     def __init__(self, talks, css_dir = False):
-        pass
+        self.talks = talks
