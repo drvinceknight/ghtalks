@@ -6,11 +6,11 @@ import argparse
 import ghtalks
 import os
 
-def serve(head, header):
+def serve(head, header, footer):
     root = os.getcwd()
     crwl = ghtalks.Crawl()
     crwl.crawl_directories(os.path.join(root, '.'))
-    index = ghtalks.Index(crwl.generate_talks(), head, header)
+    index = ghtalks.Index(crwl.generate_talks(), head, header, footer)
     index.generate_output()
     index.write()
 
@@ -23,6 +23,8 @@ if __name__ == "__main__":
                         help='Location of head.html file')
     parser.add_argument('-hr', '--header', default='header.html',
                         help='Location of header.html file')
+    parser.add_argument('-fr', '--footer', default='footer.html',
+                        help='Location of footer.html file')
     args = parser.parse_args()
     if args.serve:
-        serve(args.head, args.header)
+        serve(args.head, args.header, args.footer)
