@@ -33,7 +33,8 @@ class Crawl:
         for d in self.directories:
             d = d[len(self.root):]
             try:
-                tlk = glob.glob('.' + d + '/' + talk_filename + '.*')[0]
+                tlk = [f for f in glob.glob('.' + d + '/' + talk_filename +
+                    '.*') if any(ext in f for ext in filetypes)][0]
                 raw_title, extension = os.path.splitext(tlk)
                 date = re.search(self.date_regex, d).group()
                 title = os.path.basename(d)[len(date) + 1:].replace("-", " ")
