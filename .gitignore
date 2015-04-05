@@ -7,3 +7,5 @@ _build/
 dist/
 MANIFEST
 build
+*nav
+*snm
