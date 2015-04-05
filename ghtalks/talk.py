@@ -17,16 +17,9 @@ class Talk:
 <a class="post-link" href="%s">%s</a>
 """ % (self.date, self.file_type, self.path, self.title)
         if self.urls:
-            out += """
-<ul>
-"""
             urls = yaml.load(open(self.urls, 'r'))
             for key in sorted(urls.keys()):
                 out += """
-<li><a href=%s>%s</a></li>
+<p><a href=%s>%s</a></p>
 """ % (urls[key], key)
-
-            out += """
-</ul>
-"""
         return out
