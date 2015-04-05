@@ -71,8 +71,7 @@ css.
 For example to create the site visible [here](vincent-knight.com/gh-talks) the
 following was used:
 
-    gh-talks -hd examples/head.html -hr examples/header.html -fr
-    examples/footer.html -s
+    gh-talks -hd examples/head.html -hr examples/header.html -fr examples/footer.html -s
 
 This is meant to work seamlously with a [jekyll](http://jekyllrb.com/) site deployed with [gh-pages](https://pages.github.com/).
 
