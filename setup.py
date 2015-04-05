@@ -9,7 +9,7 @@ setup(
     packages=['ghtalks', 'ghtalks.tests'],
     scripts=['bin/gh-talks'],
     license='The MIT License (MIT)',
-    description='Generate a static side with talks',
+    description='Generate a static site with your slide decks',
     install_requires=[
         "pyyaml >= 3.11",
     ],
