@@ -38,10 +38,15 @@ class Crawl:
                 date = re.search(self.date_regex, d).group()
                 title = os.path.basename(d)[len(date) + 1:].replace("-", " ")
 
+                urls = None
+                if os.path.isfile('.' + d + '/urls.yml'):
+                    urls = '.' + d + '/urls.yml'
+
                 if extension in filetypes:
                     self.talks.append(
                         talk.Talk(title, date,
-                                  '.' + d + '/' + talk_filename + extension, extension))
+                                  '.' + d + '/' + talk_filename + extension,
+                                  extension, urls))
             except:
                 pass
         return self.talks
