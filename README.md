@@ -1,9 +1,8 @@
 [![Stories in Ready](https://badge.waffle.io/drvinceknight/ghtalks.svg?label=ready&title=Ready)](http://waffle.io/drvinceknight/ghtalks)
 [![Build Status](https://travis-ci.org/drvinceknight/ghtalks.svg?branch=master)](https://travis-ci.org/drvinceknight/ghtalks)
+[![Join the chat at https://gitter.im/drvinceknight/ghtalks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/drvinceknight/ghtalks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # gh-talks
-
-[![Join the chat at https://gitter.im/drvinceknight/ghtalks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/drvinceknight/ghtalks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Share and organise your slides easily.
 
