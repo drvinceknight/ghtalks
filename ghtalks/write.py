@@ -13,12 +13,13 @@ class Index:
         self.header = header
         self.footer = footer
 
-
     def generate_output(self):
         self.out = """"""
         for f in [self.head, self.header]:
-            if f:
+            try:
                 self.out += open(f, 'r').read()
+            except:
+                pass
         self.out += """
 <body>
 <div class="page-content">
