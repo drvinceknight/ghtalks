@@ -25,7 +25,7 @@ class Index:
 <div class="wrap">
 <div class="home">
 <ul class='posts'>"""
-        for talk in self.talks:
+        for talk in sorted(self.talks, key=lambda x: x.date, reverse=True):
             self.out += """
 <li>"""
             self.out += talk.html()

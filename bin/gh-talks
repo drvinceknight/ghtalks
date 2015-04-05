@@ -2,3 +2,23 @@
 """
 A script that crawls a directory and builds an index.html file as required.
 """
+import argparse
+import ghtalks
+import os
+
+def serve():
+    root = os.getcwd()
+    crwl = ghtalks.Crawl()
+    crwl.crawl_directories(os.path.join(root, '.'))
+    index = ghtalks.Index(crwl.generate_talks())
+    index.generate_output()
+    index.write()
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-s', '--serve', action='store_true',
+                        help='Write the index.html file')
+    args = parser.parse_args()
+    if args.serve:
+        serve()
