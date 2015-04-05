@@ -3,6 +3,8 @@
 
 # gh-talks
 
+[![Join the chat at https://gitter.im/drvinceknight/ghtalks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/drvinceknight/ghtalks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Share and organise your slides easily.
 
 Quickly build an `index.html` file of all talks in a directory.
