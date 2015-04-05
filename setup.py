@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name='gh-talks',
+    name='ghtalks',
     version='0.0.1',
     author='Vince Knight',
     author_email=('vincent.knight@gmail.com'),
