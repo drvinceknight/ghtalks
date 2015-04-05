@@ -41,7 +41,7 @@ class Crawl:
                 if extension in filetypes:
                     self.talks.append(
                         talk.Talk(title, date,
-                                  d + '/' + talk_filename + extension))
+                                  '.' + d + '/' + talk_filename + extension, extension))
             except:
                 pass
         return self.talks

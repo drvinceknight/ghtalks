@@ -49,6 +49,6 @@ class TestCrawl(unittest.TestCase):
             'test directory 2'])
         self.assertEqual(talk_dates, ['2015-03-30', '2015-03-31', '2015-04-01'])
         self.assertEqual(talk_paths,
-                ['/ghtalks/tests/test_directory/2015-03-30-test-directory-1/index.pdf',
-                 '/ghtalks/tests/test_directory/2015-03-31-test-directory-2/index.html',
-                 '/ghtalks/tests/test_directory/test_subdirectory/2015-04-01-test-directory/index.html'])
+                ['./ghtalks/tests/test_directory/2015-03-30-test-directory-1/index.pdf',
+                 './ghtalks/tests/test_directory/2015-03-31-test-directory-2/index.html',
+                 './ghtalks/tests/test_directory/test_subdirectory/2015-04-01-test-directory/index.html'])
