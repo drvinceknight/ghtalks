@@ -47,7 +47,7 @@ your talk directories can be organised how you wish.
 
 Here is an exammple of a valid file structure:
 
-    .
+    Talks
     ├── talks
     │   └── 2015-04-05-using-gh-talks
     │       └── index.html
@@ -62,6 +62,7 @@ Here is an exammple of a valid file structure:
     └── README.md
     └── header.html
     └── head.html
+    └── footer.html
     └── main.css
 
 
@@ -70,7 +71,8 @@ css.
 For example to create the site visible [here](vincent-knight.com/gh-talks) the
 following was used:
 
-    gh-talks -hd examples/head.html -hr examples/header.html -s
+    gh-talks -hd examples/head.html -hr examples/header.html -fr
+    examples/footer.html -s
 
 This is meant to work seamlously with a [jekyll](http://jekyllrb.com/) site deployed with [gh-pages](https://pages.github.com/).
 
