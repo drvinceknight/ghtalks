@@ -1,4 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/drvinceknight/ghtalks.svg?label=ready&title=Ready)](http://waffle.io/drvinceknight/ghtalks)
+[![Build Status](https://travis-ci.org/drvinceknight/ghtalks.svg?branch=master)](https://travis-ci.org/drvinceknight/ghtalks)
 
 # gh-talks
 
