@@ -22,7 +22,8 @@ class TestCrawl(unittest.TestCase):
         crwl = ghtalks.Crawl()
         crwl.crawl_directories(os.path.join(root, 'examples'))
         self.assertEquals(sorted(crwl.directories), [os.path.join(root, d)
-                          for d in ['examples/2015-04-05-Using-ghtalks-to-organise-your-talks',
+                          for d in
+                          ['examples/2015-04-05-Organise-and-share-talks',
                                     'examples/archive/2014-12-25-Auraya']])
 
     def test_has_date(self):
@@ -50,8 +51,8 @@ class TestCrawl(unittest.TestCase):
         talk_dates = sorted([t.date for t in talks])
         talk_paths = sorted([t.path for t in talks])
         self.assertEqual(talk_titles,
-                         ['Auraya', 'Using ghtalks to organise your talks'])
+                         ['Auraya', 'Organise and share talks'])
         self.assertEqual(talk_dates, ['2014-12-25', '2015-04-05'])
         self.assertEqual(talk_paths,
-                         ['./examples/2015-04-05-Using-ghtalks-to-organise-your-talks/index.html',
+                         ['./examples/2015-04-05-Organise-and-share-talks/index.html',
                           './examples/archive/2014-12-25-Auraya/index.pdf'])
