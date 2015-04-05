@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/drvinceknight/ghtalks.svg?label=ready&title=Ready)](http://waffle.io/drvinceknight/ghtalks)
+
 # gh-talks
 
 Share and organise your slides easily.
