@@ -16,6 +16,12 @@ The simplest approach is to run:
 
     pip install ghtalks
 
+You can also:
+
+    git clone https://github.com/drvinceknight/ghtalks.git
+    cd gh-talks
+    python setup.py install
+
 # Usage
 
 In any given directory each talk must live in a directory with the following
@@ -59,8 +65,12 @@ Here is an exammple of a valid file structure:
     └── main.css
 
 
-Note that you can include a `header.html` and `head.html` file with links to css
-etc...
+Note that you can include a `header.html` and `head.html` file with links to
+css.
+For example to create the site visible [here](vincent-knight.com/gh-talks) the
+following was used:
+
+    gh-talks -hd examples/head.html -hr examples/header.html -s
 
 This is meant to work seamlously with a [jekyll](http://jekyllrb.com/) site deployed with [gh-pages](https://pages.github.com/).
 
