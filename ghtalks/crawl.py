@@ -28,7 +28,7 @@ class Crawl:
         return bool(re.search(self.date_regex,
             os.path.basename(os.path.normpath(directory))[:len('yyyy-mm-dd')]))
 
-    def generate_talks(self, filetypes=['.pdf', '.html'],
+    def generate_talks(self, filetypes=['.pdf', '.html', '.link'],
                        talk_filename='index'):
         self.talks = []
         for d in self.directories:
@@ -45,9 +45,13 @@ class Crawl:
                     urls = '.' + d + '/urls.yml'
 
                 if extension in filetypes:
+                    path = '.' + d + '/' + talk_filename + extension
+                    if extension == '.link':
+                        with open(path, 'r') as f:
+                            path = f.read()
                     self.talks.append(
                         talk.Talk(title, date,
-                                  '.' + d + '/' + talk_filename + extension,
+                                  path,
                                   extension, urls))
             except:
                 pass

@@ -34,6 +34,9 @@ After installing, assume you have a directory that looks something like this::
     │           └── index.tex
     │           └── index.pdf
     │           └── images
+    │       └── 2013-12-15-my-other-christmas-day-talk
+    │           └── index.link
+    │           └── images
     └── README.md
     └── header.html
     └── head.html
@@ -58,6 +61,8 @@ There are command line arguments that you can fun to point at particular files::
 
     gh-talks -s -hd path-to-head.html -hr path-to-header.html -fr path-to-footer.html
 
+Note that an :code:`index.link` file can be used, in which case the link on the
+generated page will link to the url given in the first line of that file.
 
 Contributing
 ------------

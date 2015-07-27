@@ -24,7 +24,8 @@ class TestCrawl(unittest.TestCase):
         self.assertEquals(sorted(crwl.directories), [os.path.join(root, d)
                           for d in
                           ['examples/2015-04-05-Organise-and-share-talks',
-                                    'examples/archive/2014-12-25-Auraya']])
+                                    'examples/archive/2014-12-25-Auraya',
+                                    'examples/archive/2015-07-27-links']])
 
     def test_has_date(self):
         root = os.getcwd()
@@ -51,8 +52,9 @@ class TestCrawl(unittest.TestCase):
         talk_dates = sorted([t.date for t in talks])
         talk_paths = sorted([t.path for t in talks])
         self.assertEqual(talk_titles,
-                         ['Auraya', 'Organise and share talks'])
-        self.assertEqual(talk_dates, ['2014-12-25', '2015-04-05'])
+                         ['Auraya', 'Organise and share talks', 'links'])
+        self.assertEqual(talk_dates, ['2014-12-25', '2015-04-05', '2015-07-27'])
         self.assertEqual(talk_paths,
                          ['./examples/2015-04-05-Organise-and-share-talks/index.html',
-                          './examples/archive/2014-12-25-Auraya/index.pdf'])
+                          './examples/archive/2014-12-25-Auraya/index.pdf',
+                          'http://vknight.org/Talks/\n'])
