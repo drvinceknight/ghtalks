@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='ghtalks',
-    version='0.0.2',
+    version='0.0.3',
     author='Vince Knight',
     url='https://github.com/drvinceknight/ghtalks',
     author_email=('vincent.knight@gmail.com'),
