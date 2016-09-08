@@ -5,7 +5,7 @@ import os
 import glob
 
 import re
-import talk
+from .talk import Talk
 
 
 class Crawl:
@@ -50,9 +50,9 @@ class Crawl:
                         with open(path, 'r') as f:
                             path = f.read()
                     self.talks.append(
-                        talk.Talk(title, date,
-                                  path,
-                                  extension, urls))
+                        Talk(title, date,
+                             path,
+                             extension, urls))
             except:
                 pass
         return self.talks

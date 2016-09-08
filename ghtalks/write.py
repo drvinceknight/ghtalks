@@ -1,7 +1,6 @@
 """
 Script to write the html
 """
-import crawl
 
 class Index:
     """

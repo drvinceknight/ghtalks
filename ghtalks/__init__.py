@@ -1,3 +1,3 @@
-from crawl import *
-from talk import *
-from write import *
+from .crawl import *
+from .talk import *
+from .write import *
